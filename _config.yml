@@ -1,0 +1,27 @@
+title: "Top Cursos"
+description: "Nossa missão é levar conhecimento gratuito para todos."
+baseurl: ''  
+url: 'https://topcursos.ga'
+
+markdown: kramdown
+permalink: /:title/
+gems: ['jekyll-paginate']
+
+paginate: 70
+paginate_path: "/pagina:num/"
+
+links:
+- title: Home
+  url: /
+- title: Sobre
+  url: /sobre
+
+btc: '1BdRaDt3eFFRNPTZEPoqCb7ctib7xeBCXT'
+
+exclude: ['package.json', 'src', 'node_modules', 'gulpfile.js']
+
+# html minify
+compress_html:
+    clippings: all
+    comments: ["<!-- ", " -->"]
+    profile: false
