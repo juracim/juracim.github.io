@@ -16,15 +16,28 @@ layout: default
         {% if page.url == "/" %}
         <div class="notification">
             <button class="delete"></button>
+            <strong>Cursos que serão postados em breve:</strong>
+            <ul>
+                <li>- Alura: Todas as trilhas completas</li>
+                <li>- Solid Treinamentos: Teste de Intrusão em Redes Wireless (Wi-Fi)</li>
+                <li>- Udemy: Curso de AWS</li>
+                <li>- Udemy: Fundamentos de programação em Java</li>
+                <li>- Udemy: Curso de JavaServer Faces e PrimeFaces Completo</li>
+                <li>- Udemy: Orientação a Objetos com Java</li>
+                <li>- Udemy: Photoshop CC 2017 Completo - do Iniciante ao Avançado</li>
+                <li>- Udemy: Indesign CC 2017 Completo - do Iniciante ao Avançado</li>
+                <li>- Mário Vergara: Curso de inglês 4.0</li>
+            </ul>
+            <br>
             <span class="icon">
                 <i class="icon-bitcoin"></i>
             </span>
             Ajude na aquisição de novos cursos doando qualquer valor em Bitcoin: <b>1BdRaDt3eFFRNPTZEPoqCb7ctib7xeBCXT</b>
         </div>
         {% endif %}
-        <div class="post-ad">
+        <!-- <div class="post-ad">
             <iframe data-aa='774440' src='//ad.a-ads.com/774440?size=468x60' scrolling='no' style='width:468px; height:60px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
-        </div>
+        </div> -->
         {% for post in paginator.posts %}
             <article class="card main-card">
                 <div class="card-content">
@@ -46,7 +59,7 @@ layout: default
                         <span class="tag is-{% if post.status %}success{% else %}danger{% endif %}">status: {% if post.status %}on{% else %}off{% endif %}</span>
                     </p>
                     <p class="card-footer-item">
-                        <a href="{{ post.url }}" class="button is-outlined" target="_blank">
+                        <a href="{{ post.url }}" class="button is-outlined" target="_self">
                             <span class="icon">
                                 <i class="icon-download-cloud"></i>
                             </span>

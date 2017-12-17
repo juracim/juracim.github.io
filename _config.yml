@@ -7,7 +7,7 @@ markdown: kramdown
 permalink: /:title/
 gems: ['jekyll-paginate']
 
-paginate: 70
+paginate: 15
 paginate_path: "/pagina:num/"
 
 links:

